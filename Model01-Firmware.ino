@@ -147,16 +147,16 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
    ___, ___, ___, ___,       ___,       ___,       ___,
         ___, ___, ___,       ___,       ___,       ___,
    ___, ___, ___, Key_Minus, Key_Quote, Key_Enter, ___,
-   ___, ___, ___, ___,
+   ShiftToLayer(KBIOFUNCTION), ___, ___, ___,
              ___),
 
   [KBIOFUNCTION] =  KEYMAP_STACKED
-  (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           XXX,
-   Key_Tab,  ___,              ___, ___,        ___, ___, ___,
-   Key_Home, ___,       ___, ___, ___, ___,
-   Key_End,  Key_PrintScreen,  Key_Insert,  ___,        ___, ___,  ___,
-   ___, Key_Delete, ___, ___,
-   ___,
+  (___,      Key_F1,           Key_F2,     Key_F3, Key_F4, Key_F5, XXX,
+   Key_Tab,  ___,              ___,        Key_UpArrow,    ___,    ___,    ___,
+   Key_Home, ___,              Key_LeftArrow, Key_DownArrow,    Key_RightArrow,    ___,
+   Key_End,  Key_PrintScreen,  Key_Insert, ___,    ___,    ___,    ___,
+                                           ___, Key_Delete, ___, ___,
+                                                 ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
    Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
