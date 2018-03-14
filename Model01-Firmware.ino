@@ -13,6 +13,9 @@
 // - Add DigitalRain plugin
 // - Remove mouse support
 // - Remove a few default LED plugins
+// TODO -- Numpad moves away from the home row :(. Rebind 0 and . to something else and move all of the other numbers down a row.
+// TODO -- Make the FUNCTION layer more atreus-like.
+// TODO -- Make an FPS layer which binds keys away from index finger
 
 #ifndef BUILD_INFORMATION
 #define BUILD_INFORMATION "locally built"
@@ -119,7 +122,7 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
    ___, LSHIFT(Key_1), LSHIFT(Key_2), LSHIFT(Key_LeftCurlyBracket), LSHIFT(Key_RightCurlyBracket), LSHIFT(Key_Backslash), ___,
    ___, LSHIFT(Key_3), LSHIFT(Key_4), LSHIFT(Key_9),                LSHIFT(Key_0),                 Key_Backtick,
    ___, LSHIFT(Key_5), LSHIFT(Key_6), Key_LeftCurlyBracket,         Key_RightCurlyBracket,         LSHIFT(Key_Backtick),  ___,
-                  LockLayer(KBIOFUNCTION), LSHIFT(Key_Insert), Key_PrintScreen, ___,
+                  ___, LSHIFT(Key_Insert), Key_PrintScreen, ___,
                                            ___,
 
    M(MACRO_VERSION_INFO),  Key_PageUp,    Key_Keypad7, Key_Keypad8,   Key_Keypad9,  Key_KeypadMultiply, ___,
