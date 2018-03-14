@@ -13,8 +13,6 @@
 // - Add DigitalRain plugin
 // - Remove mouse support
 // - Remove a few default LED plugins
-// TODO -- Numpad moves away from the home row :(. Rebind 0 and . to something else and move all of the other numbers down a row.
-// TODO -- Make the FUNCTION layer more atreus-like.
 // TODO -- Make an FPS layer which binds keys away from index finger
 
 #ifndef BUILD_INFORMATION
@@ -116,7 +114,6 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
    Key_Minus, Key_LeftAlt, Key_Spacebar, ShiftToLayer(NUMPAD),
    ShiftToLayer(ATREMU)),
 
-
   [NUMPAD] =  KEYMAP_STACKED
   (___, ___, ___, ___, ___, ___, ___,
    ___, LSHIFT(Key_1), LSHIFT(Key_2), LSHIFT(Key_LeftCurlyBracket), LSHIFT(Key_RightCurlyBracket), LSHIFT(Key_Backslash), ___,
@@ -125,10 +122,10 @@ const Key keymaps[][ROWS][COLS] PROGMEM = {
                   ___, LSHIFT(Key_Insert), Key_PrintScreen, ___,
                                            ___,
 
-   M(MACRO_VERSION_INFO),  Key_PageUp,    Key_Keypad7, Key_Keypad8,   Key_Keypad9,  Key_KeypadMultiply, ___,
-   ___,                    Key_PageDown,  Key_Keypad4, Key_Keypad5,   Key_Keypad6,  Key_KeypadAdd,      ___,
-                           LSHIFT(Key_7), Key_Keypad1, Key_Keypad2,   Key_Keypad3,  Key_Backslash,      Key_Quote,
-   ___,                    ___,           Key_Keypad0, Key_KeypadDot, Key_Keypad0,  Key_Equals,         Key_Enter,
+   M(MACRO_VERSION_INFO),  Key_PageUp,    XXX,         Key_KeypadDot, Key_Keypad0,  Key_KeypadMultiply, ___,
+   ___,                    Key_PageDown,  Key_Keypad7, Key_Keypad8,   Key_Keypad9,  Key_KeypadAdd,      ___,
+                           LSHIFT(Key_7), Key_Keypad4, Key_Keypad5,   Key_Keypad6,  Key_Backslash,      Key_Quote,
+   ___,                    ___,           Key_Keypad1, Key_Keypad2,   Key_Keypad3,  Key_Equals,         Key_Enter,
    ___, ___, ___, ___,
         ___),
 
